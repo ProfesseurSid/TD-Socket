@@ -1,0 +1,13 @@
+Serveur multithread :
+
+ProdCons pc = new prodcons<socket>;
+Thread[] slaves = Thread[nbT];
+for(nbT)
+  slaves[i] = new Slave();
+  slaves[i].setdaemon();
+  
+while(true)
+  server.accept(thing);
+  Socket client = new Socket(thing);
+  pc.put(client);
+  
